@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "cpp-build",
+            "command": "make",
+            "args": [],
+            "type": "shell"
+          },
+          {
+            "label": "cpp-build-debug",
+            "command": "make",
+            "args": [
+              "debug"
+            ],
+            "type": "shell"
+          },
+          {
+            "label": "cpp-clean",
+            "command": "make",
+            "args": [
+              "clean"
+            ],
+            "type": "shell"
+          }
+    ]
+}
