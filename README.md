@@ -14,7 +14,7 @@ simple_cpp
     └── test.cpp
 ```
 ## 编写C++项目的通用Makefile文件
-内容见[Makefile](https://github.com/zfb132/simple_cpp/tree/master/Makefile)  
+内容见[Makefile](https://github.com/zfb132/simple_cpp/tree/main/Makefile)  
 原始版本为[mbcrawfo/GenericMakefile](https://github.com/mbcrawfo/GenericMakefile)  
 使用说明：  
 * 编译（默认编译为`Release`版本）：`make`或者`make release`
@@ -23,7 +23,7 @@ simple_cpp
 * 清除文件：`make clean`
 
 **注意**  
-* 添加头文件路径
+* 添加头文件[路径](https://github.com/zfb132/simple_cpp/blob/7fb9d08020f99b60c4c83d5fffc9fd8923c2462c/Makefile#L21)  
 `INCLUDES = -I $(SRC_PATH) -I include/`
 
 ## 使用VSCode调试代码[可选]
@@ -102,8 +102,7 @@ simple_cpp
                     "ignoreFailures": false,
                 }
             ],
-            "preLaunchTask": "cpp-build-debug" 
-            // 调试会话开始前执行的任务，与tasks.json的label相对应
+            "preLaunchTask": "cpp-build-debug"
         }
     ]
 }
@@ -140,5 +139,5 @@ simple_cpp
 ├── test.cpp
 └── test.h
 ```
-此[Makefile](https://github.com/zfb132/simple_cpp/tree/master/Makefile)文件依然可用，只是为了效率，需要修改头文件目录（删除原先的`include/`）  
+此[Makefile](https://github.com/zfb132/simple_cpp/tree/main/Makefile)文件依然可用，只是为了效率，需要修改头文件[目录](https://github.com/zfb132/simple_cpp/blob/7fb9d08020f99b60c4c83d5fffc9fd8923c2462c/Makefile#L21)（删除原先的`include/`）  
 `INCLUDES = -I $(SRC_PATH)`
