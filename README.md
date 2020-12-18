@@ -20,6 +20,7 @@ simple_cpp
 * 编译（默认编译为`Release`版本）：`make`或者`make release`
 * 编译为调试版本：`make debug`
 * 多线程编译：`make -j12 debug`
+* 显示编译命令（不执行）：`make -n debug`
 * 清除文件：`make clean`
 
 **注意**  
